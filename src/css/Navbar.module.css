@@ -1,0 +1,220 @@
+.header{
+    position: sticky;
+    background-color: #fff;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+.navbar_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 9px 3px 11px rgba(0,0,0,0.3);
+    filter: drop-shadow(2px 4px 6px rgba(0,0,0,0.3));
+}
+.navbar_small_size{
+    display: none;
+}
+.right_side{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 8px 8px;
+}
+.right_img{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.right_img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+.ul{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.navbar_item{
+    list-style: none;
+}
+.navbar_link{
+    display: flex;
+    align-items: center;
+    padding: 16px 40px;
+    text-decoration: none;
+    line-height: 1.4rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+}
+.navbar_link:hover{
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+.navbar_link .icon_link{
+    width: 30px;
+    height: 25px;
+}
+.navbar_link .text_active{
+    font-weight: 600;
+}
+
+.left_side{
+    display: flex;
+    align-items: center;
+}
+.my_account button{
+    text-wrap: nowrap;
+    outline: none;
+    border: none;
+    height: 40px;
+    width: 100px;
+    border-radius: 12px;
+    padding: 8px 8px;
+    color: #fff;
+    background-color: hsl(240, 41%, 30%);
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+.my_account button:hover{
+    background-color: hsl(240, 41%, 36%);
+}
+.accountbtn_container{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* z-index: 101; */
+    background-color: rgb(243 243 243);
+}
+.account_div{
+    position: absolute;
+    top:40vh;
+    
+}
+
+
+/* responsive */
+@media (max-width:1141px) {
+    .navbar_link{
+        padding: 16px 35px;
+    }
+}
+@media (max-width:1080px) {
+    .navbar_link{
+        padding: 16px 25px;
+    }
+}
+@media(max-width:973px){
+    .navbar_link{
+        padding: 16px 13px;
+    }
+}
+@media(max-width:821px){
+    .navbar_link{
+        padding: 16px 6px;
+    }
+}
+@media (max-width:769px) {
+    .right_img{
+        width: 30px;
+        height: 30px;
+    }
+    .ul{
+        gap: 0;
+    }
+    .navbar_link{
+        padding: 16px 3px;
+    }
+    .my_account button{
+        border-radius: 4px;
+    }
+}
+@media (max-width:678px) {
+    .right_side{
+        gap:3px;
+        padding: 8px 2px;
+    }
+    .right_text h3{
+        font-size: 13px;
+    }
+    .navbar_link{
+        padding: 16px 0px;
+    }
+    .my_account button{
+        height: 35px;
+        width: 85px;
+    }
+}
+@media (max-width:601px) {
+    .navbar_link span{
+        font-size: 14px;
+    }
+    .navbar_link{
+        flex-direction: column;
+        padding: 16px 13px;
+    }
+}
+@media (max-width:541px) {
+    .navbar_small_size{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .right_side{
+        /* flex: 1 0 20%; */
+    }
+    .left_side{
+        /* flex: 1 0 20%; */
+    }
+    .menu_icon{
+        /* flex:1 0 20%; */
+        margin-right: 20px;
+    }
+    .menu_icon i{
+        font-size: 28px;
+    }
+    .right_container_side{
+        display: none;
+    }
+    .left_container_side{
+        display: none;
+    }
+    .navbar_container{
+        display: block;
+    }
+    .ul{
+        /* height: 0; */
+        /* overflow: hidden; */
+        display: block;
+    }
+    .menu_active{
+        height: 500px;
+    }
+    .navbar_link{
+        display: block;
+    }
+}
+@media (max-width:181px) {
+    
+}
+
+
+
+
+
